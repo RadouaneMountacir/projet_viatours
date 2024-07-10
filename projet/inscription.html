@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Inscription</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="inscription.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Logo">
+            </a>
+            <button class="menu-toggle">&#9776;</button>
+            <nav>
+                <ul>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Activities</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#" class="login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector("nav");
+
+            menuToggle.addEventListener("click", function () {
+                nav.classList.toggle("show-menu");
+            });
+        });
+    </script>
+    
+    
+    <main>
+
+        <div class="contenu">
+
+
+            <form>
+                <div class="form_logo">
+                    <img src="logo.png" alt="Logo" id="img_logo">
+                </div>
+                <div class="form_titre">
+                    <h1 id="title_p">
+                        Inscription
+                    </h1>
+                </div>
+                <div class="form_info">
+<<<<<<< HEAD
+
+                    <div class="form_info1">
+
+                        <label for="inpt_nom" class="form_label" style="padding-top: 10px;">Nom</label>
+                        <br>
+
+                        <input type="text" class="form_input" id="inpt_nom" placeholder="tapez votre nom" style="padding-top: 10px;">
+                        <BR>
+                        <label for="inpt_prenom" class="form_label">Prenom</label>
+                        <br>
+
+                        <input type="text" class="form_input" id="inpt_prenom" placeholder="tapez votre prenom" style="padding-top: 10px;">
+
+                        <label for="inpt_gmail" class="form_label">
+                     Gmail</label>
+
+                        <input type="text" class="form_input" id="inpt_gmail" placeholder="tapez votre mail" style="padding-top: 10px;">
+                        <br>
+                        <label for="inpt_tele" class="form_label">
+                     Telephone
+                     </label>
+
+                        <input type="text" class="form_input" id="inpt_tele" placeholder="tapez votre numero" style="padding-top: 10px;">
+                        <br></div>
+                    <div class="form_info2">
+                        <BR>
+                        <!--input gender---------------------------------------------------->
+                        <label for="inpt_gendre" class="form_label" style="padding-top: 10px;">Sexe</label>
+                        <input type="text" class="form_input" id="inpt_gendre" placeholder="tapez votre Sexe" style="padding-top: 10px;">
+                        <br>
+                        <!--input age ---------------------------------------------------->
+                        <label for="inpt_age" class="form_label">Age</label>
+
+                        <input type="text" class="form_input" id="inpt_age" placeholder="tapez votre Age" style="padding-top: 10px;">
+                        <br>
+
+                        <!--input adress---------------------------------------------------->
+                        <label for="inpt_adresse" class="form_label">Adresse</label>
+
+                        <input type="text" class="form_input" id="inpt_adresse" placeholder="tapez votre Adresse" style="padding-top: 10px;">
+                        <br>
+                        <!--input adress---------------------------------------------------->
+                        <label for="inpt_password" class="form_label">
+                        Mot de passe      
+                        </label>
+
+                        <input type="text" class="form_input" id="inpt_password" placeholder="tapez un mot de passe" style="padding-top: 10px;">
+                        <br>
+                    </div>
+                </div>
+                <div class="form_info3" style="padding-left: 110px;">
+=======
+                    <div class="form_info1">
+                        <label for="inpt_nom" class="form_label">Nom</label>
+                     <br>
+                 <input type="text" class="form_input" id="inpt_nom">
+                     <BR>
+                       <label for="inpt_prenom" class="form_label">Prenom</label>
+                         <br>
+                 <input type="text" class="form_input" id="inpt_prenom">
+           <br>
+                 <label for="inpt_gmail" class="form_label">
+                     Gmail</label>
+                     <br>
+                 <input type="text" class="form_input" id="inpt_gmail">
+                 <br>
+                 <label for="inpt_tele" class="form_label">
+                     Telephone
+                     </label>
+                     <br>
+                 <input type="text" class="form_input" id="inpt_tele">
+                 <br></div>
+                    <div class="form_info2"> 
+                        <label for="inpt_gendre" class="form_label">
+                        Gendre      
+                        </label>
+                        <br>
+                        
+                    <input type="text" class="form_input" id="inpt_gendre">
+                    <br>
+                    <label for="inpt_password" class="form_label">
+                        Mot de passe      
+                        </label>
+                        <br>
+                    <input type="text" class="form_input" id="inpt_password">
+                    <br>
+</div>
+                   <div class="form_info3">
+>>>>>>> 1a12f4dd4a1e5b01e4c76ba60323ab3617d3392f
+                    <button class="form_login">Login</button>
+                    <br>
+                    <br>
+                    <a href="login2.html" class="form_link1">
+    vous avez deja un compte? 
+</a>
+                   </div>
+                  
+                </div>
+
+
+            </form>
+            <div class="div_img">
+
+                <img src="grand_imag.jpg" alt="Error" class="form_image">
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <div class="col1">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="viatours">
+                </div>
+                <p>
+                    Explorez le monde avec Viatours :voyages exceptionnels,<br>découvertes inoubliables, <br>aventures uniques.
+                </p>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="col2">
+                <h5>Liens utiles</h5>
+                <ul>
+                    <li><a href="">rabat</a></li>
+                    <li><a href="">paris</a></li>
+                    <li><a href="">casa</a></li>
+                </ul>
+            </div>
+            <div class="col3">
+                <h5>Contact</h5>
+                <div class="info-contact">
+                    <p><i class="fa-regular fa-address-book"></i>contact@</p>
+                    <p><i class="fa-solid fa-phone"></i>mail@</p>
+                    <p><i class="fa-regular fa-envelope"></i>gmail@</p>
+                    <p></p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="copyright">
+            <hr>
+            <p>Copyright &copy; 2024 Tous droits réservés par <a href="#">Viatours Voyage</p></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

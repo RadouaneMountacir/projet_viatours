@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page login</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="login2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="logo.png" alt="Logo">
+            </a>
+            <button class="menu-toggle">&#9776;</button>
+            <nav>
+                <ul>
+                    <li><a href="#">Destinations</a></li>
+                    <li><a href="#">Activities</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#" class="login">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>    
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector("nav");
+
+            menuToggle.addEventListenser("click", function () {
+                nav.classList.toggle("show-menu");
+            });
+        });
+    </script>
+    
+    
+
+    <main>
+
+        <div class="contenu">
+            <div class="div_img">
+                <img src="grand_imag.jpg" alt="Error" class="form_image">
+            </div>
+            <form>
+                <div class="form_logo">
+                    <img src="logo.png" alt="Logo" id="img_logo">
+                </div>
+                <div class="form_titre">
+                    <p id="title_p">
+                        Connexion
+                    </p>
+                </div>
+                <div class="form_info">
+                    <label for="inpt_nom" class="form_label">
+                            nom d'utilisateur
+                        </label>
+                    <br>
+                    <input type="text" class="form_input" id="inpt_nom" style="padding-top: 10px;width: 100px;">
+                    <BR>
+                    <label for="inpt_password" class="form_label">
+                            Mot de passe         
+                            </label>
+                    <input type="text" class="form_input" id="inpt_password" style="padding-top: 10px;width: 100px;">
+                    <br>
+                    <button class="form_login">Login</button>
+                    <a href="inscription.html" class="form_link1">
+    vous n'avez pas un compte 
+</a>
+                </div>
+
+            </form>
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <div class="col1">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="viatours">
+                </div>
+                <p>
+                    Explorez le monde avec Viatours :voyages exceptionnels,<br>découvertes inoubliables, <br>aventures uniques.
+                </p>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="col2">
+                <h5>Liens utiles</h5>
+                <ul>
+                    <li><a href="">rabat</a></li>
+                    <li><a href="">paris</a></li>
+                    <li><a href="">casa</a></li>
+                </ul>
+            </div>
+            <div class="col3">
+                <h5>Contact</h5>
+                <div class="info-contact">
+                    <p><i class="fa-regular fa-address-book"></i>contact@</p>
+                    <p><i class="fa-solid fa-phone"></i>mail@</p>
+                    <p><i class="fa-regular fa-envelope"></i>gmail@</p>
+                    <p></p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="copyright">
+            <hr>
+            <p>Copyright &copy; 2024 Tous droits réservés par <a href="#">Viatours Voyage</p></a>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
